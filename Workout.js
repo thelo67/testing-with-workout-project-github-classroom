@@ -11,7 +11,7 @@ const createWorkout = username => {
 
 const addExercise = (workoutId, exerciseName) => {
     const result = db('workouts_exercises').insert({ workoutId, exerciseName });
-    logger.logInfo({ workoutId, exerciseName }, `Exercise ${exerciseName} added to workout ${workoutId}`);
+    //logger.logInfo({ workoutId, exerciseName }, `Exercise ${exerciseName} added to workout ${workoutId}`);
     return result;
 };
 
